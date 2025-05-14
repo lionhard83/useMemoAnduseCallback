@@ -1,12 +1,14 @@
 // import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { ContainerProducts } from './ContainerProducts.tsx'
+import { ContainerWithContext } from './ContainerWithContext.tsx'
 
 
 
 
 
-createRoot(document.getElementById('root')!).render(<ContainerProducts />)
+
+
+createRoot(document.getElementById('root')!).render(<ContainerWithContext />)
 
 // const App2 = () => <div>Hello World</div>
