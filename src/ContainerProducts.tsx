@@ -1,20 +1,8 @@
 import axios from "axios"
 import { useEffect, useState, memo, useCallback } from "react"
+import { Product } from "./models/Product";
 
-type Rating = {
-    rate: number;
-    count: number;
-  };
-  
-export type Product = {
-id: number;
-title: string;
-price: number;
-description: string;
-category: string;
-image: string;
-rating: Rating;
-};
+
 
 export const ProductCard = memo((props: {product: Product, increment: (value: number) => void, decrement: (value: number) => void}) => {
     console.log("si ri-renderizza");
